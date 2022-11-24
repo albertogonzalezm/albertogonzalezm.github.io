@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100vh;
+    color: white;
+    margin: 0px 5%;
+}
+
+.logo {
+    display: block;
+    padding: 3% 0px 3% 0px;
+}
+
+.content {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.illustration {
+    width: 100%;
+}
+
+.content-left {
+    width: 55%;
+    padding: 0px 30px 0px 0px;
+}
+
+.content-right {
+    width: 45%;
+    padding: 0px 0px 0px 30px;
+}
+
+h1,
+p {
+    font-family: "Open sans", sans-serif;
+    width: 90%;
+}
+
+h1 {
+    padding: 5vh 0 0 0;
+    font-size: 5vh;
+}
+
+p {
+    padding: 4vh 0 0 0;
+    font-size: 1.2em;
+    padding-bottom: 3vh;
+}
+
+.btn {
+    color: var(--Violet);
+    width: 220px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    border: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 2vh;
+    box-shadow: 2px 2px 20px #191919;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--Soft_Magenta);
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+i, a img {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    width: 1em;
+    padding: 6px;
+    margin: 10px;
+    border: solid white 1px;
+    border-radius: 50px;
+}
+
+a img{
+    margin-top: 13px;
+    width: 1em;
+}
+
+a img:hover, i:hover {
+    border: solid var(--Soft_Magenta) 1px;
+    color: var(--Soft_Magenta);
+}
+
+@media (max-width:1195px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-color: var(--Violet);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        color: white;
+        min-width: 375px;
+        margin: 0;
+    }
+
+    main {
+        margin: 10%;
+    }
+
+    .logo {
+        padding: 0px;
+        max-width: 40%;
+    }
+
+    .content {
+        padding-top: 0px;
+        display: block;
+        padding-top: 15%;
+    }
+
+    .illustration {
+        width: 100%;
+    }
+
+    .content-left {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+    .content-right {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    h1,
+    p {
+        width: 100%;
+    }
+
+    h1 {
+        padding: 0;
+        font-size: 3.5vh;
+    }
+
+    p {
+        padding: 25px 0;
+        font-size: 2vh;
+    }
+
+    .btn {
+        font-size: 1.8vh;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}

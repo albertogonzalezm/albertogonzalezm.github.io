@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:root {
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparen_white: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--Very_light_gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vmin;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 6px;
+    width: 900px;
+    min-width: 280px;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    font-family: 'Lexend Deca';
+    padding: 30px;
+}
+
+.title {
+    font-family: "Big Shoulders Display";
+    font-size: 2rem;
+    color: var(--Very_light_gray);
+    padding: 15px;
+}
+
+.texto_parrafo {
+    padding: 15px;
+    height: 195px;
+    color: var(--Transparen_white);
+    line-height: 25px;
+}
+
+.sedans {
+    color: var(--Bright_orange);
+    background-color: var(--Bright_orange);
+    border-radius: 6px 0 0 6px;
+}
+
+.suvs {
+    color: var(--Dark_cyan);
+    background-color: var(--Dark_cyan);
+}
+
+.luxury {
+    color: var(--Very_dark_cyan);
+    background-color: var(--Very_dark_cyan);
+    border-radius: 0 6px 6px 0;
+}
+
+img {
+    padding: 15px;
+}
+
+.learn_more {
+    display: block;
+    font-family: 'Lexend Deca';
+    text-align: center;
+    background-color: var(--Very_light_gray);
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    width: 130px;
+    margin: 15px;
+}
+
+.learn_more:hover {
+    background-color: transparent;
+    color: var(--Very_light_gray);
+    border: solid var(--Very_light_gray) 2px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    main {
+        flex-wrap: wrap;
+        width: 80vh;
+        margin: 5vh;
+    }
+
+    .sedans {
+        border-radius: 6px 6px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 6px 6px;
+    }
+
+    .texto_parrafo {
+        height: inherit;
+    }
+}
