@@ -60,6 +60,7 @@ h2 {
 }
 
 .dificulties {
+    padding: 1%;
     margin: auto;
     text-align: center;
     min-width: 320px;
@@ -96,7 +97,7 @@ h2 {
 }
 
 .dificulties a:hover {
-    font-size: 120%;
+    font-size: 115%;
     border-radius: 3px;
 }
 
@@ -157,6 +158,6 @@ i {
     transition: 0.6s;
 }
 
-.freecodecamp-p{
-    opacity: .5;
+.info {
+    padding: 2%;
 }
