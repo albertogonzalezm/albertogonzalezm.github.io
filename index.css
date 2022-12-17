@@ -13,7 +13,7 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -23,13 +23,13 @@ body {
     min-width: 320px;
 }
 
-.title{
+.title {
     padding: 1em 1em .5em 1em;
     text-align: center;
     display: block;
 }
 
-h1{
+h1 {
     padding: 0 40px 0 40px;
 }
 
@@ -55,7 +55,7 @@ h2 {
     transition: .08s;
 }
 
-.btn:active{
+.btn:active {
     font-size: 1em;
 }
 
@@ -89,15 +89,14 @@ h2 {
     border-radius: 8px;
 }
 
-/* #freeCodeCamp {
+#freeCodeCamp {
     color: var(--freeCodeCamp);
     border: solid var(--freeCodeCamp) 3px;
     border-radius: 8px;
-} */
+}
 
 .dificulties a:hover {
-    font-size: 110%;
-    color: var(--bg);
+    font-size: 120%;
     border-radius: 3px;
 }
 
@@ -113,9 +112,9 @@ h2 {
     background-color: var(--intermediate);
 }
 
-/* #freeCodeCamp a:hover {
+#freeCodeCamp a:hover {
     background-color: var(--freeCodeCamp);
-} */
+}
 
 ol a {
     margin: .6em;
@@ -136,7 +135,7 @@ i {
     font-size: 40px;
 }
 
-.logo_img{
+.logo_img {
     padding: 7px 5.5px;
     background-color: white;
     border-radius: 50px;
@@ -156,4 +155,8 @@ i {
     --btnBg: white;
     --btnColor: var(--intermediate);
     transition: 0.6s;
+}
+
+.freecodecamp-p{
+    opacity: .5;
 }
