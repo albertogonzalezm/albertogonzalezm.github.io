@@ -22,13 +22,17 @@ body {
     margin: 0px 5%;
 }
 
-.logo {
-    display: block;
-    padding: 3% 0px 3% 0px;
+header{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.logo{
+
 }
 
 .content {
-    padding-top: 2%;
     display: flex;
     justify-content: center;
 }
